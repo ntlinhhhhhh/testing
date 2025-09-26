@@ -16,7 +16,7 @@ public final class calculateBusFare {
             } else if (age < 60) {
                 if (time.isBefore(LocalTime.of(12, 0))) {
                     return 10000;
-                } else if (time.isAfter(LocalTime.of(18, 0))) {
+                } else if (time.isBefore(LocalTime.of(18, 0))) {
                     return 15000;
                 } else {
                     return 20000;
@@ -24,7 +24,7 @@ public final class calculateBusFare {
             } else {
                 if (time.isBefore(LocalTime.of(12, 0))) {
                     return 8000;
-                } else if (time.isAfter(LocalTime.of(18, 0))) {
+                } else if (time.isBefore(LocalTime.of(18, 0))) {
                     return 12000;
                 } else {
                     return 15000;
